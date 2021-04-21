@@ -1,0 +1,52 @@
+{
+  "name": "@coco-ui/styled-tailwind",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.22",
+    "@types/react": "^17.0.3",
+    "@types/tailwindcss": "^2.0.2",
+    "jest": "^26.6.3",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^26.5.5"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "tailwindcss": "^2.1.1",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "tailwindcss": "^2.1.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "contributors": [
+    {
+      "email": "maliszewskid3@gmail.com",
+      "name": "Dorian Maliszewski",
+      "url": "https://dorianmaliszewski.fr"
+    }
+  ]
+}
