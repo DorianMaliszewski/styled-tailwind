@@ -1,17 +1,17 @@
 {
   "name": "@coco-ui/styled-tailwind",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "license": "MIT",
   "private": false,
   "author": {
-  "email": "maliszewskid3@gmail.com",
-  "name": "Dorian Maliszewski",
-  "url": "https://dorianmaliszewski.fr"
+    "email": "maliszewskid3@gmail.com",
+    "name": "Dorian Maliszewski",
+    "url": "https://dorianmaliszewski.fr"
   },
   "files": [
-  "./dist"
+    "./dist"
   ],
   "publishConfig": {
     "access": "public",
