@@ -1,10 +1,22 @@
 {
   "name": "@coco-ui/styled-tailwind",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "license": "MIT",
   "private": false,
+  "author": {
+  "email": "maliszewskid3@gmail.com",
+  "name": "Dorian Maliszewski",
+  "url": "https://dorianmaliszewski.fr"
+  },
+  "files": [
+  "./dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "test": "jest",
     "build": "rollup -c"
