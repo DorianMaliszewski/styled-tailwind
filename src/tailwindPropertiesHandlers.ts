@@ -31,12 +31,12 @@ export const isValidValue = (
     ? possibleValues.some((possibleValue) => {
         if (
           typeof possibleValue === "string" ||
-          typeof possibleValue === "boolean"
+          typeof possibleValue === "number"
         ) {
-          return possibleValue === value
+          return `${possibleValue}` === `${value}`
         }
-        if (typeof possibleValue === "number") {
-          return `${possibleValue}` === value
+        if (typeof possibleValue === "boolean") {
+          return possibleValue === !!value
         }
         if (typeof possibleValue === "function") {
           return possibleValue(value)

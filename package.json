@@ -18,6 +18,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
+    "test:coverage": "jest --coverage",
     "test": "jest",
     "build": "rollup -c"
   },
@@ -47,11 +48,22 @@
     "transform": {
       ".(ts|tsx)": "ts-jest"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/index.ts"
+    ],
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ],
+    "reporters": [
+      "default"
     ]
   },
   "contributors": [

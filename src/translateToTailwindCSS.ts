@@ -35,7 +35,7 @@ const translateToTailwindCSS = (styles: any) => {
       className += " "
     }
     className += getComputedPropertyClassName(key, value)
-    return className
+    return className.trimLeft().trimRight()
   }, "")
 }
 export default translateToTailwindCSS
