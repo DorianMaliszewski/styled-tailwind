@@ -4,3 +4,8 @@ dist
 yarn-error.log
 .vscode
 *.local
+.eslintcache
+coverage
+*.log
+.reports
+.env

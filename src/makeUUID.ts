@@ -6,7 +6,7 @@ const makeUUID = (prefix = "", length = 10): string => {
   for (var i = 0; i < length; i++) {
     result.push(characters.charAt(Math.floor(Math.random() * charactersLength)))
   }
-  return prefix?.length > 0 ? `${prefix}-${result.join("")}` : result.join("")
+  return prefix.length > 0 ? `${prefix}-${result.join("")}` : result.join("")
 }
 
 export default makeUUID
